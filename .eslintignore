@@ -1,0 +1,8 @@
+node_modules/
+*.d.ts
+postcss.config.js
+tailwind.config.js
+__mocks__
+__fixtures__
+__tests__
+components/**/*.test.tsx
