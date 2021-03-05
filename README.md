@@ -42,6 +42,7 @@ You've been asked to build a React component that is a table displaying the best
 - Format the "Sold" column with comma separators.
 - Configure the filter input component with a listener such that any character typed in will match **either** the artist name or the album name (case-insensitive) and filter the table data accordingly.
 - For example, if "eagle" is entered, the table should show only 2 records for "The Eagles".
+- Clearing the filter input should reset the data to show all records.
 
 ### Nice to Have
 
