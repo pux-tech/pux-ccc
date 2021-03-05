@@ -17,11 +17,6 @@
     "strict": true,
     "target": "es5"
   },
-  "include": [
-    "react-app-env.d.ts",
-    "src/typings/**/*.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
+  "include": ["react-app-env.d.ts", "src/typings/**/*.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "src/typings/__generated__/**/*.ts"]
 }
