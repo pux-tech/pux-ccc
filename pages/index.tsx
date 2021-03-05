@@ -1,9 +1,9 @@
 /*
  * pages/index.tsx
- * Description: The "homepage", so to speak...all your code should live here
+ * Description: The "homepage", so to speak.
  * Copyright (c) 2021 PredictiveUX
  */
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 
 import { AlbumTable, FilterInput, PageTitle } from 'components/'
@@ -11,9 +11,11 @@ import { AlbumTable, FilterInput, PageTitle } from 'components/'
 import css from 'styles/Home.module.css'
 
 const Home = (): JSX.Element => {
+  const [albumData] = useState([])
   /**
    * how will you fetch the album data
    */
+  // useEffect(() => {}, [])
 
   return (
     <React.Fragment>
@@ -30,7 +32,7 @@ const Home = (): JSX.Element => {
       <div className={css.container}>
         <PageTitle />
         <FilterInput />
-        <AlbumTable data={[]} />
+        <AlbumTable data={albumData} />
       </div>
     </React.Fragment>
   )

@@ -21,23 +21,23 @@ const AlbumTable: React.FC<AlbumTableProps> = ({ data }: AlbumTableProps): JSX.E
       <table className={css.albumTable}>
         <thead>
           <tr>
+            <th>Country</th>
             <th>Rank</th>
             <th>Artist</th>
             <th>Album</th>
             <th>Year</th>
             <th>Sold</th>
-            <th>Country</th>
           </tr>
         </thead>
         <tbody>
           {/* this is placeholder data...substitute with your fetched data */}
           <tr>
+            <td>United States</td>
             <td>4</td>
             <td>AC/DC</td>
             <td>Back in Black</td>
             <td>1980</td>
             <td>25,000,000</td>
-            <td>United States</td>
           </tr>
         </tbody>
       </table>
