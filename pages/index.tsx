@@ -3,11 +3,18 @@
  * Description: The "homepage", so to speak...all your code should live here
  * Copyright (c) 2021 PredictiveUX
  */
-import Head from 'next/head'
 import React from 'react'
+import Head from 'next/head'
+
+import { AlbumTable, FilterInput, PageTitle } from 'components/'
+
 import css from 'styles/Home.module.css'
 
 const Home = (): JSX.Element => {
+  /**
+   * how will you fetch the album data
+   */
+
   return (
     <React.Fragment>
       <Head>
@@ -20,7 +27,11 @@ const Home = (): JSX.Element => {
         </div>
         <div className={css.title}>Candidate Coding Challenge</div>
       </div>
-      <div className={css.container}>asdfasf</div>
+      <div className={css.container}>
+        <PageTitle />
+        <FilterInput />
+        <AlbumTable data={[]} />
+      </div>
     </React.Fragment>
   )
 }

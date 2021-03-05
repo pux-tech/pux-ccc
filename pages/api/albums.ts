@@ -8,6 +8,6 @@ import { NextApiRequest, NextApiResponse } from 'next'
 
 import albumData from '__data__/topSellingAlbums.json'
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+export default (req: NextApiRequest, res: NextApiResponse): any => {
   res.status(200).json(albumData)
 }
