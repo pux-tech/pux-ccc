@@ -33,7 +33,7 @@ You've been asked to build a React component that is a table displaying the best
 ### Tasks
 
 - Read all these instructions (!!)
-- For this repo into your own personal GH.
+- Fork this repository.
 - Install dependencies, run the application and open in your browser.
 - Most of your work should be in `pages/index.tsx` and the React components in `components/`
 - Change "Your Title Here" to whatever you wish.
