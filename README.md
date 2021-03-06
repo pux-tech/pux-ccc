@@ -40,7 +40,7 @@ You've been asked to build a React component that is a table displaying the best
 - Come up with a way to fetch the data from "the backend", so to speak.
 - Display the data in the table **sorted by country (A-Z), then rank (1-5)**.
 - Format the "Sold" column with comma separators.
-- Configure the filter input component with a listener such that any character typed in will match **either** the artist name or the album name (case-insensitive) and filter the table data accordingly.
+- Configure the filter input component with a listener such that any character typed in will match/partial match **either** the artist name or the album name (case-insensitive) and filter the table data accordingly.
 - For example, if "eagle" is entered, the table should show only 2 records for "The Eagles".
 - Clearing the filter input should reset the data to show all records.
 
@@ -49,7 +49,7 @@ You've been asked to build a React component that is a table displaying the best
 - Can you make the column headers clickable and execute a sort?
 - Can you implement a creative way to show albums only from a specific country without using the filter input field?
 - Can you create a Typescript interface or type for the album data?
-- Suprise us with something else creative.
+- Surprise us with something else creative.
 
 ### When You're Finished
 
