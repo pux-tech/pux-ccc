@@ -22,15 +22,14 @@ const Instructions = styled.div`
 /**
  * We presume you'll need some kind of change handler to listen to inputs
  */
-// type FilterInputProps = {
-//   changeHandler: (evt: Event) => void
-// }
-
-const FilterInput = (): JSX.Element => {
+type FilterInputProps = {
+  handleFilterInput: (evt: Event) => void
+}
+const FilterInput: React.FC<FilterInputProps> = ({ handleFilterInput }): JSX.Element => {
   return (
     <Wrapper>
-      <Instructions>Use this input to filter data...</Instructions>
-      <input type='text' className={css.filterInput} />
+      <Instructions>Filter by artist or ablum name...</Instructions>
+      <input type='text' onInput={handleFilterInput} className={css.filterInput} />
     </Wrapper>
   )
 }
